@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_two"
+    android:layout_width="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/bgcolor"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clientDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Recharge de médicaments"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/TextViewLarge"
+                android:text="@string/regimen1_label"
+
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/regimen1"
+                style="@style/TextBox"
+                android:background="@drawable/bg_dropdown"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/duration1"
+                    style="@style/TextBox"
+                    android:hint="Durée en jours"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:textColor="#fff" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/prescribed1"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:hint="Quantité prescrite"
+                    android:inputType="number"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/dispensed1"
+                    style="@style/TextBox"
+                    android:hint="Quantité distribuée"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/TextViewLarge"
+                android:text="@string/regimen2_label"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/regimen2"
+                android:background="@drawable/bg_dropdown"
+                style="@style/TextBox" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/duration2"
+                    style="@style/TextBox"
+                    android:textColor="@color/white"
+                    android:hint="Durée en jours"
+                    android:background="@android:color/transparent"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#fff"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/prescribed2"
+                    style="@style/TextBox"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/prescribed2_label"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#fff"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/dispensed2"
+                    style="@style/TextBox"
+                    android:textColor="@color/white"
+                    android:background="@android:color/transparent"
+                    android:hint="Quantité distribuée"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/TextViewLarge"
+                android:text="@string/regimen3_label"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:background="@drawable/bg_dropdown"
+                android:id="@+id/regimen3"
+                style="@style/TextBox" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/duration3"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:hint="Durée en jours"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#fff"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/prescribed3"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:hint="Quantité prescrite"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/dispensed3"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:hint="Quantité distribuée"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/TextViewLarge"
+                android:textColor="#fff"
+                android:text="@string/regimen4_label"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#fff"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/regimen4"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:hint="Entrez le régime"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/duration4"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:hint="Durée en jours"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/prescribed4"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:hint="Quantité prescrite"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#fff"
+                android:paddingTop="2dp">
+
+                <EditText
+                    android:id="@+id/dispensed4"
+                    style="@style/TextBox"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/white"
+                    android:hint="Quantité distribuée"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

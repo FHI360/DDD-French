@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.fhi360.mobile.cparp.ClientProfileActivity">
+
+    <item
+        android:id="@+id/arvRefill"
+        android:orderInCategory="1"
+        android:title="ARV Approvisionnement"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/discontinueService"
+        android:orderInCategory="2"
+        android:title="Arrêt du service DDD"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+
+
+    <item
+        android:id="@+id/refilHistory"
+        android:orderInCategory="2"
+        android:title="Historique de recharge"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+
+
+</menu>

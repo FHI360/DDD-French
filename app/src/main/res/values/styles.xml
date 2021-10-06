@@ -1,0 +1,389 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bgcolor</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blues</item>
+    </style>
+
+    <style name="Theme.NoTitleBar" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="loginParent" parent="parent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+
+    <style name="loginCard" parent="parent"></style>
+
+    <style name="linearParent" parent="parent">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="headerTextPrimary" parent="headerText">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+
+    <style name="TextViewSearch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.FullScreen1">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+
+
+    <style name="OtpWidget.OtpView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextViewMedium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="TextBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#666699</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">#0F9AF7</item>
+    </style>
+
+
+    <style name="TextViewLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="title_activity_main">My Clients</string>
+    <string name="title_activity_defaulter">Defaulters</string>
+    <string name="title_add_encounter">Dispense Drugs</string>
+    <string name="title_search_encounter">Search Record</string>
+    <string name="search_hint">Type and Search</string>
+
+
+    <string name="action_refill">ARV Refill</string>
+    <string name="action_chroniccare">Chronic Care Screening</string>
+    <string name="action_drugtherapy">Drug Therapy Monitoring</string>
+    <string name="action_refill_history">ARV Refill History</string>
+    <string name="action_chroniccare_history">Chronic Care Screening History</string>
+    <string name="action_drugtherapy_history">Drug Therapy Monitoring History</string>
+    <string name="action_clienttracking_history">Client Tracking History</string>
+    <string name="action_discontinue">Discontinue Service</string>
+
+    <!--    <string name="server_url">http://lamis3.sidhas.org:8080/</string>-->
+    <!--  <string name="server_url">http://192.168.43.36:8080/</string>-->
+    <string-array name="drawer_items">
+        <item>Client Encounter</item>
+        <item>Client Tracking</item>
+        <item>HIV Testing Services</item>
+        <item>Monthly Summary Form</item>
+        <item>Synchronize</item>
+        <item>Activate</item>
+    </string-array>
+
+
+    <string-array name="spinner_bmi">
+        <item></item>
+        <item>&lt;18.5 (Underweight)</item>
+        <item>18.5-24.9 (Healthy)</item>
+        <item>25.0-29.9 (Overweight)</item>
+        <item>&gt;30 (Obesity)</item>
+        <item>&gt;40 (Morbid Obesity)</item>
+    </string-array>
+
+    <string-array name="spinner_muac">
+        <item></item>
+        <item>&lt;11.5cm (Severe Acute Malnutrition)</item>
+        <item>11.5-12.5cm (Moderate Acute Malnutrition)</item>
+        <item>&gt;12.5cm (Well nourished)</item>
+    </string-array>
+
+    <string-array name="spinner_phdp">
+        <item></item>
+        <item>=&lt;3</item>
+        <item>4-8</item>
+        <item>=&gt;9</item>
+    </string-array>
+
+    <string-array name="spinner_severity">
+        <item></item>
+        <item>Mild (Grade 1)</item>
+        <item>Moderate (Grade 2)</item>
+        <item>Severe (Grade 3)</item>
+        <item>Life-Threatening (Grade 4)</item>
+    </string-array>
+
+    <string-array name="spinner_tracker">
+        <item></item>
+        <item>Phone Call</item>
+        <item>Home Visit</item>
+    </string-array>
+
+    <string-array name="spinner_outcome">
+        <item></item>
+        <item>Mort connue</item>
+        <item>Traitement arrêté</item>
+        <item>Transfert automatique</item>
+        <item>Accepté de revenir</item>
+        <item>Non atteint</item>
+    </string-array>
+    <!--    <string-array name="spinner_discontinue">-->
+    <!--        <item> </item>-->
+    <!--        <item>Becomes pregnant</item>-->
+    <!--        <item>Unable to pay service charge</item>-->
+    <!--        <item>Develops comorbidity</item>-->
+    <!--        <item>Loss of viral suppression</item>-->
+    <!--        <item>Decides to go back to hospital</item>-->
+    <!--        <item>Becomes non-adherent</item>-->
+    <!--    </string-array>-->
+
+    <!--    <string-array name="spinner_month">-->
+    <!--        <item></item>-->
+    <!--        <item>January</item>-->
+    <!--        <item>February</item>-->
+    <!--        <item>March</item>-->
+    <!--        <item>April</item>-->
+    <!--        <item>May</item>-->
+    <!--        <item>June</item>-->
+    <!--        <item>July</item>-->
+    <!--        <item>August</item>-->
+    <!--        <item>September</item>-->
+    <!--        <item>October</item>-->
+    <!--        <item>November</item>-->
+    <!--        <item>December</item>-->
+    <!--    </string-array>-->
+
+    <string name="login_button_label">Login</string>
+    <string name="activate_button_label">Activate</string>
+    <string name="save_button_label">Save</string>
+    <string name="sync_button_label">Synchronize</string>
+    <string name="sync_description">Synchronize data with LAMIS server</string>
+    <string name="download_checkbox_label">Also download available patients data to my device</string>
+    <!--    <string name="user_name_label">Enter username</string>-->
+    <!--    <string name="pin_label">Enter activation code</string>-->
+
+    <string name="date_label">Encounter date: </string>
+    <string name="question1_label">Did the CP receive a copy of Informed Consent Form duly signed by patient for participation in the Community ART Refill program?: </string>
+    <string name="question2_label">Did the CP receive completed Eligibility Determination and Devolvement Form from health facility?: </string>
+    <string name="question3_label">Did the CP receive Pharmacy Order Forms duly filled and signed for bimonthly ARV refills from the health facility?: </string>
+    <string name="question4_label">Did patient confirm that he/she received two months ARV refill at the health facility during the last visit?: </string>
+    <string name="question5_label">Was chronic care screening services provided by CP using Care and Support checklist during this visit?: </string>
+    <string name="question6_label">Was medication adherence assessment and counselling services provided by CP during this visit?: </string>
+    <string name="question7_label">Was patient screened for medication errors and adverse drug reactions at the CP during this visit?: </string>
+    <string name="question8_label">Were prescribed ART regimen dispensed at the CP during this visit?: </string>
+    <string name="question9_label">Were prescribed concomitant drugs dispensed at the CP during this visit?: </string>
+    <string name="regimen1_label">ARV</string>
+    <string name="duration1_label">Duration in days </string>
+    <string name="prescribed1_label">Quantity Prescribed )</string>
+    <string name="dispensed1_label">Quantity Dispensed </string>
+    <string name="regimen2_label">Cotrimoxazole</string>
+    <string name="duration2_label">Duration in days </string>
+    <string name="prescribed2_label">Quantité prescrite</string>
+    <string name="dispensed2_label">Quantité distribuée </string>
+    <string name="regimen3_label">TPT</string>
+    <string name="duration3_label">Duration in days (medicine #3)</string>
+    <string name="prescribed3_label">Quantity Prescribed (medicine #3)</string>
+    <string name="dispensed3_label">Quantity Dispensed (medicine #3)</string>
+    <string name="regimen4_label">Autre médecine</string>
+    <string name="duration4_label">Duration in days</string>
+    <string name="prescribed4_label">Quantity Prescribed </string>
+    <string name="dispensed4_label">Quantity Dispensed </string>
+    <string name="notes_label">Any concerns:</string>
+    <string name="next_refill_label" >Date de la prochaine recharge d\'ARV</string>
+
+    <string name="additional_service1_label">Insecticide Treated Nets</string>
+    <string name="additional_service2_label">Intermittent Prophylactic Treatment</string>
+    <string name="additional_service3_label">Cervical Cancer Screening</string>
+    <string name="additional_service4_label">Active Member of SG</string>
+    <string name="additional_service5_label">Family Planning</string>
+    <string name="additional_service6_label">Basic Care Kits</string>
+    <string name="additional_service7_label">Disclosure Counseling</string>
+    <string name="additional_service8_label">Social Services</string>
+    <string name="additional_service9_label">Linkage to LGAs</string>
+    <string name="additional_service10_label">Legal</string>
+    <string name="additional_service11_label">Other</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="parent.TextLayout">
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+    </style>
+
+
+    <style name="AppTheme.ProfileTheme">
+        <item name="colorPrimaryDark">@color/profilePrimaryDark</item>
+        <item name="colorAccent">@color/profileAccentColor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+
+    <style name="headerText" parent="parent">
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textInputHintStyle" parent="TextAppearance.AppCompat.Medium.Inverse">
+        <item name="android:textColorHint">@color/blackTextColor</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="profileDetailsLayout" parent="parent">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+
+    <style name="profileDetailsLayout1" parent="parent">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:color">#000000</item>
+
+    </style>
+
+    <style name="profileDetailsImage">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="profileDetailsTextMain" parent="viewParent">
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="profileDetailsMiniText" parent="viewParent">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="proifleDetailsView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/profileAccentColor</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="proifleDetailsView1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <style name="profileStyledBackButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/profile_back_button</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:drawableLeft">@drawable/back_to_home_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:minWidth">250dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="ButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+</resources>

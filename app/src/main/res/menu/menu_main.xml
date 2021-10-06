@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/report"
+        android:title="Rapport"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+</menu>

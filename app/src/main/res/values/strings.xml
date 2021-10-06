@@ -1,0 +1,214 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DDD</string>
+    <string name="action_search">Rechercher</string>
+    <string name="server_url">http://lamis3.sidhas.org:8080/</string>
+    <string name="pin_label" >Entrer le code d\'activation</string>
+    <string name="user_name_label" >Saisissez votre nom d\'utilisateur</string>
+    <string name="phone_hint">Numéro de téléphone</string>
+    <string name="langselection">Select the language!!!!</string>
+    <string-array name="spinner_month">
+        <item></item>
+        <item/>
+
+        <item>Janvier</item>
+        <item>Février</item>
+        <item>Mars</item>
+        <item>Avril</item>
+        <item>Mai</item>
+        <item>Juin</item>
+        <item>Juillet</item>
+        <item>Août</item>
+        <item>Septembre</item>
+        <item>Octobre</item>
+        <item>Novembre</item>
+        <item>Décembre</item>
+    </string-array>
+
+
+    <string-array name="outlet_type">
+        <item>Sélectionnez le type de point de distribution</item>
+        <item>Pharmacie privée</item>
+        <item>GAC</item>
+        <item>Distribution par VAD</item>
+    </string-array>
+    <string name="str_tv_title">AChartEngine Graph in a custom layout</string>
+    <string-array name="spinner_discontinue">
+        <item> </item>
+        <item>Devient enceinte</item>
+        <item>Impossible de payer les frais de service</item>
+        <item>Développe la comorbidité</item>
+        <item>Perte de suppression virale</item>
+        <item>Décide de retourner à l\'hôpital</item>
+        <item>Devient non adhérent</item>
+        <item>Autres</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item></item>
+        <item>Masculin</item>
+        <item>Feminin</item>
+    </string-array>
+
+    <string-array name="clinical_stage">
+        <item></item>
+        <item>Stade I</item>
+        <item>Stade II</item>
+        <item>Stade III</item>
+        <item>Stade IV</item>
+    </string-array>
+
+
+    <string-array name="spinner_yes_no">
+        <item></item>
+        <item>Oui</item>
+        <item>Non</item>
+    </string-array>
+
+    <string-array name="viral_load_type">
+        <item></item>
+        <item>Routine</item>
+        <item>Ciblé</item>
+    </string-array>
+
+    <string name="prompt_email" >Nom d\'utilisateur</string>
+    <string name="username_portugues">nome do usuário</string>
+    <string name="password_portugues">senha</string>
+    <string name="login_portugues">Conecte-se</string>
+    <string name="forgot_password_portugues">Esqueceu a senha?</string>
+    <string name="don_t_have_an_account_portugues">Você não tem uma conta?</string>
+    <string name="register_portugues">Registro</string>
+    <string name="register_as_facility_portugues">Registre-se como Instalação</string>
+    <string name="register_as_a_ddd_outlet_portugues">Registre-se como uma tomada DDD</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
+
+    <string name="forgot_password">Mot de passe oublié?</string>
+    <string name="logo">Logo</string>
+
+
+    <string name="don_t_have_an_account" >Vous n\'avez pas de compte ?</string>
+
+    <string name="login">Connexion</string>
+    <string name="password">le mot de passe</string>
+    <string name="title_activity_login2" >S\'identifier</string>
+    <string name="sign_up_now" >S\'inscrire maintenant</string>
+    <string name="inventory_management" >Gestion de l\'inventaire</string>
+    <string name="drug_name">Nom du médicament</string>
+    <string name="basic_unit">Unité de base</string>
+    <string name="save">Sauvegarder</string>
+    <string name="basic_unit1">Basic Unit?</string>
+    <string name="register_as_facility">S’INSCRIRE COMME UN CENTRE DE SANTE</string>
+    <string name="register_as_a_ddd_outlet">S’INSCRIRE
+COMME POINT DE DISTRIBUTION</string>
+    <string name="art_care">ART Se soucier</string>
+    <string name="did_you_miss_any_dose_of_your_medication">Avez-vous oublié une dose de votre médicament</string>
+    <string name="enter_reaction">Entrez la réaction</string>
+    <string name="next_clinic_visit">Prochaine visite à la clinique</string>
+    <string name="viral_load_due_date" >Date d\'échéance de la charge virale</string>
+    <string name="date_tracked">Date de suivi</string>
+    <string name="type_of_tracking">Type de suivi</string>
+    <string name="tracking_outcome">Suivi des résultats</string>
+    <string name="next_agreed_date">Prochaine date convenue</string>
+    <string name="welcome">Bienvenu</string>
+    <string name="name">Nom</string>
+    <string name="change_language">Change Language</string>
+    <string name="activation_code" >Code d activation</string>
+    <string name="server_url1">Server URL</string>
+    <string name="activate">Activer</string>
+    <string name="arv_refill">ARV Refill</string>
+    <string name="discontinuing_ddd_service">Dinterruption du service DDD</string>
+    <string name="refill_history">Historique de recharge</string>
+    <string name="address">Adresse</string>
+    <string name="phone">Téléphoner</string>
+    <string name="gender">Gender</string>
+    <string name="age">Âge</string>
+    <string name="last_refill_date">Date de la dernière recharge</string>
+    <string name="last_vl_date">Dernière CV/Date</string>
+    <string name="next_clinic">Clinique suivante</string>
+    <string name="next_viral_load">Prochaine charge virale</string>
+    <string name="ddd_outlet_name">DDD Nom du point de vente</string>
+    <string name="register" >S\'inscrire</string>
+    <string name="date_of_registration" >Date d\'enregistrement</string>
+    <string name="date_discontinued" >Date d\'arrêt</string>
+    <string name="reason_for_discontinuing_service" >Raison de l\'arrêt</string>
+    <string name="female">Femelle</string>
+    <string name="login_email_hint">E-mail</string>
+    <string name="login_password_hint">Mot de passe</string>
+    <string name="signup_login_hint" >Vous avez déjà un compte? S\'identifier</string>
+    <string name="login_signup_hint" >Vous n\'avez pas de compte ? S\'inscrire</string>
+    <string name="user_login">Utilisateur en ligne</string>
+    <string name="register_as_either_a_facility_n_or_as_a_ddd_outlet">S’inscrire comme un centre de santé ou comme Point de distribution</string>
+    <string name="next">Suivant</string>
+    <string name="welcome_n_to_n_ddd">Bienvenue\nsur\nDDD</string>
+    <string name="create_facility_account">Créer un compte de centre
+de santé</string>
+    <string name="facility_name">Facility Name</string>
+    <string name="confirm_password">Confirmez le mot de passe</string>
+    <string name="phone_number">Numéro de téléphone</string>
+    <string name="create_ddd_outlet_account">réinitialiser le mot de passe</string>
+
+    <string name="title_1">Visite de mise à jour</string>
+    <string name="title_2">Re visite</string>
+    <string name="title_3">Inventaire</string>
+    <string name="title_4">Rapport</string>
+    <string name="title_5">Synchroniser</string>
+    <string name="text_1">Clients qui visitent pour la première fois.</string>
+    <string name="text_2">Les clients qui sont pour la visite de Re.</string>
+    <string name="text_3">Gérer la distribution des médicaments à partir des installations.</string>
+    <string name="text_4">Comprend un tableau de bord, une routine/nationale, etc.</string>
+    <string name="text_5" >Communication entre l\'application et la base de données DDD</string>
+    <string name="register_ddd_outlet">Enregistrer point de distribution</string>
+    <string name="outlet_visualization_dashboard">Tableau de bord de visualisation des points de vente</string>
+    <string name="rountine_report">Routine</string>
+    <string name="national_report">National</string>
+    <string name="routine_national_report">Rapport de routine et national</string>
+    <string name="text_routine_report_description">Activités quotidiennes au sein du point de vente.</string>
+    <string name="text_national_report_description">Rapports mensuels de synthèse/PEPFA.</string>
+
+
+    <string name="title1_1">Enregistrer point de distribution DDD</string>
+    <string name="title1_2">Inscription des clients</string>
+    <string name="title1_3">Inventaire</string>
+    <string name="title1_4">Rapport</string>
+    <string name="title1_5">Synchroniser</string>
+
+    <string name="title1_11">Enregistrement du point de distribution pour la premiere fois</string>
+    <string name="title1_21">Gestion des dispensations de médicaments.</string>
+    <string name="title1_41">Module de rapport qui comprend (tableau de bord, routine, national, etc.).</string>
+    <string name="title1_51" >Communication entre l\'application et la base de données DDD</string>
+    <string name="drug_setup">Configuration du médicament</string>
+    <string name="drug_issues">Distribution de médicaments</string>
+    <string name="text_drug_setup">Médicaments à stocker</string>
+    <string name="text_drug_assigned">Dispenses de médicaments aux points de
+distribution</string>
+
+    <string name="title1_134">Enregistrement du client et affectation aux points de distribution DDD</string>
+
+    <string name="drug_recieved">Médicament reçu</string>
+    <string name="drug_requestion">Demande de drogue</string>
+    <string name="drug_recieved_desc">Afficher la façon dont les médicaments ont été distribués au patient</string>
+    <string name="drug_request_desc" >Demander des médicaments à l\'établissement</string>
+    <string name="send_reminder">Envoyer un rappel</string>
+    <string name="check_assigned_clients">Attribué</string>
+    <string name="first_visit">Première visite</string>
+    <string name="user_navigation">Navigation utilisateur</string>
+    <string name="discontinue_service">Interrompre le service</string>
+    <string name="appointments">Appointments</string>
+    <string name="client_profile">Profil client</string>
+    <string name="drug_refill">Réapprovisionnent de médicaments</string>
+    <string name="search_patient">Rechercher un patient</string>
+    <string name="search_here">Cherche ici</string>
+    <string name="clickmore">Cliquez sur Plus</string>
+
+    <string name="pick_up_history">Histoire des patients</string>
+    <string name="patient_history_desc" >Cela montre l histoire d un patient individuel</string>
+    <string name="_dispense_register" >Enregistrement de la distribution d ARV</string>
+    <string name="_dispense_register_desc" >Il s agit du relevé quotidien de la distribution des ARV</string>
+    <string name="invent_rio_relat_rio" >Rapport d inventaire</string>
+</resources>

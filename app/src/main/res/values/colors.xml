@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e83aeb</color>
+    <color name="colorPrimaryDark">#4A47A7</color>
+    <color name="colorAccent">#f25a5d</color>
+    <color name="bgcolor">#313131</color>
+    <color name="colorBlue">#28A2CF</color>
+    <color name="colorBlueT">#6428a2cf</color>
+    <color name="colorPurple">#A130FF</color>
+    <color name="colorPurpleT">#64a130ff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="purple">#4A47A7</color>
+    <color name="colorTextHeader">#FFFFFF</color>
+    <color name="colorText">#111</color>
+    <color name="colorBackgroundshape">#9C27B0</color>
+    <color name="colorBackgroundshape1">#00264D</color>
+    <color name="colorOpposite">#60c002</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLight">#7F7F7F</color>
+    <color name="colorBorder">#e6e3e2</color>
+    <color name="promotion_blue">#367e90</color>
+    <color name="promotion_red">#ae5900</color>
+    <color name="promotion_ivory">#998501</color>
+    <color name="blackTextColor">#000</color>
+
+    <color name="colorLoginPrimaryDark">#FF9FE0E8</color>
+
+    <color name="colorDeepSkyBlue">#9FE0E8</color>
+    <color name="colorSolitude">#DFE6E9</color>
+    <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorBlackPearl">#1E272E</color>
+    <color name="colorRhino">#3B4350</color>
+    <color name="colorFreeSpeechBlue">#3C40C6</color>
+  ]
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="colorAsh">#8C8C8C</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="colorOk">#1565C0</color>
+    <color name="colorCancel">#FF493E</color>
+    <color name="colorGrey">#7d7d7d</color>
+
+    <color name="colorTextHint">#51d8c7</color>
+    <color name="lightgreyforshadow">#cdc5d0</color>
+    <color name="navigationBarColorAttempted">#777</color>
+    <color name="navigationBarColorSkipped">#063e8b</color>
+    <color name="violet">#673ab7</color>
+    <color name="sky_blue">#0f96fe</color>
+    <color name="sky_blue_pressed">#245e61</color>
+    <color name="black">#000</color>
+    <color name="lightGreen">#76ab42</color>
+    <color name="white">#ffffff</color>
+    <color name="from">#000000</color>
+    <color name="subject">#111111</color>
+    <color name="timestamp">#4285f4</color>
+    <color name="message">#7a7a7a</color>
+    <color name="icon_tint_normal">#7a7a7a</color>
+    <color name="icon_tint_selected">#fed776</color>
+    <color name="row_activated">#e0e0e0</color>
+    <color name="bg_action_mode">#757575</color>
+    <color name="bg_circle_default">#666666</color>
+
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="blues">#4877eb</color>
+
+    <color name="profileBackground">#fff</color>
+
+    <color name="profileEditTextColor">#707070</color>
+
+</resources>

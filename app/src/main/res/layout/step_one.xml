@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_one"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalDetailsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/bgcolor"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clientDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:text="Constantes"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/date_visit"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView1"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:hint="Date de la rencontre"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/body_weight1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/body_weight"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView1"
+                    android:background="@android:color/transparent"
+                    android:hint="Poids corporel (kg)"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bp1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/bp2"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView2"
+                    android:background="@android:color/transparent"
+                    android:hint="Bp (systolique) mmHg"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bpdystolic1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/bpdystolic"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView2"
+                    android:background="@android:color/transparent"
+                    android:hint="Bp (diastolique) mmHg"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/temprature1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/temprature"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView2"
+                    android:background="@android:color/transparent"
+                    android:hint="Température (°C)"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorSolitude" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

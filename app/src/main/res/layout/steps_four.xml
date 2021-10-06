@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_step_four"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/bgcolor"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clientDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="@string/art_care"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/TextViewLarge"
+                android:layout_margin="10dp"
+                android:text="@string/did_you_miss_any_dose_of_your_medication"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/missedanyRefil"
+                style="@style/TextBox"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/howmanyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/howmany"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView1"
+                    android:layout_margin="10dp"
+                    android:autofillHints=""
+                    android:hint="How  Many"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/anyAdverse"
+                style="@style/TextViewLarge"
+                android:layout_margin="10dp"
+                android:text="Tout problème indésirable"
+                android:textColor="#fff" />
+
+            <Spinner
+                android:id="@+id/adverseIssue"
+                style="@style/TextBox"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_dropdown"
+                android:entries="@array/spinner_yes_no"
+                android:textColor="#fff" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/addversreactiontext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/addversreactiontext"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView1"
+                    android:autofillHints=""
+                    android:hint="@string/enter_reaction"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/date_next_clinic_visit"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView1"
+                    android:focusable="false"
+                    android:hint="@string/next_clinic_visit"
+                    android:textColor="#fff" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/viral_load_deu_date"
+                    style="@style/TextBox"
+                    android:layout_below="@+id/textView1"
+                    android:focusable="false"
+                    android:hint="@string/viral_load_due_date"
+                    android:textColorHint="#fff" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="2dp"
+                android:textColorHint="#fff">
+
+                <EditText
+                    android:id="@+id/next_refill"
+                    style="@style/TextBox"
+                    android:focusable="false"
+                    android:hint="@string/next_refill_label"
+                    android:textColorHint="#fff" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/save_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/outletbutton"
+                android:foreground="?attr/selectableItemBackground"
+                android:text="@string/save"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

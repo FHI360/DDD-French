@@ -1,0 +1,3 @@
+include ':app'
+//include ':shapednavigationview'
+rootProject.name = "DDD"

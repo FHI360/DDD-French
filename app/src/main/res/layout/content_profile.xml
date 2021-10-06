@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:textColor="@color/white"
+            android:text="@string/client_profile" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/name1"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/name1"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/name"
+                android:textColor="@color/white"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/name1"
+                android:text="developer" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/address1"
+                android:textColor="@color/white"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/address1"
+                android:text="@string/address" />
+
+            <TextView
+                android:id="@+id/address"
+                android:textColor="@color/white"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/address1"
+                android:text="Avenue 2nd Street NW SY." />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:textColor="@color/white"
+                android:id="@+id/phoneview"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/common_full_open_on_phone" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/phoneview"
+                android:text="@string/phone" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/phone"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/phoneview"
+                android:text="Avenue 2nd Street NW SY." />
+
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/gender1"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon"
+                />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/gender1"
+                android:text="@string/gender" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/gender"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/gender1"
+                android:text="12-05-1990" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:textColor="@color/white"
+                android:id="@+id/emailImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="@string/age" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/age"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/emailImageView"
+                android:text="Female" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/dobImageView"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/dobImageView"
+                android:text="@string/last_refill_date" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/cd4"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/dobImageView"
+                android:text="12-05-1990" />
+
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:textColor="@color/white"
+                android:id="@+id/dobImageView1"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/dobImageView1"
+                android:text="@string/last_vl_date" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/viral_load"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/dobImageView1"
+                android:text="12-05-1990" />
+
+
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:textColor="@color/white"
+                android:id="@+id/next_clinic1"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/next_clinic1"
+                android:text="@string/next_clinic" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/next_clinic"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/next_clinic1"
+                android:text="12-05-1990" />
+
+
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/next_viralLoad1"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/facilityoutleticon" />
+
+            <TextView
+                android:textColor="@color/white"
+                style="@style/profileDetailsTextMain"
+                android:layout_toRightOf="@id/next_viralLoad1"
+                android:text="@string/next_viral_load" />
+
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/next_viralLoad"
+                style="@style/profileDetailsMiniText"
+                android:layout_toRightOf="@id/next_viralLoad1"
+                android:text="12-05-1990" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

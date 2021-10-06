@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="org.fhi360.mobile.cparp.ClientProfileActivity">
+
+    <!--    <item-->
+    <!--        android:id="@+id/edit"-->
+    <!--        android:orderInCategory="1"-->
+    <!--        android:title="Edit"-->
+    <!--        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="2"
+        android:title="Désactiver la pharmacie"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+
+
+</menu>
